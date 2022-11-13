@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" focusTraversable="true" prefHeight="420.0" prefWidth="791.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="olamundojavafx.FXMLDocumentController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Label fx:id="lblMensagem" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="10.0" layoutX="177.0" layoutY="82.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="77.0" prefWidth="409.0" text="Mensagem" textAlignment="JUSTIFY" textFill="#e81d1d" textOverrun="LEADING_ELLIPSIS">
+         <font>
+            <Font name="System Bold" size="47.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnclick" alignment="CENTER" contentDisplay="BOTTOM" layoutX="290.0" layoutY="232.0" mnemonicParsing="false" onAction="#clicouBotao" prefHeight="39.0" prefWidth="183.0" text="Clique em mim" textAlignment="JUSTIFY" textFill="#d00707">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+    </children>
+   <effect>
+      <Bloom threshold="1.0" />
+   </effect>
+   <cursor>
+      <Cursor fx:constant="H_RESIZE" />
+   </cursor>
+</AnchorPane>
