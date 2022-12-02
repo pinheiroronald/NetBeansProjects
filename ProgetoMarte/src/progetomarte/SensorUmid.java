@@ -1,15 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package progetomarte;
 
 import java.util.Scanner;
 
-/**
- *
- * @author pinhe
- */
+
 public class SensorUmid {
      
      Hora h = new Hora();
@@ -23,11 +17,15 @@ public class SensorUmid {
         }
     }
    public void RealatorioUmid(){
+       System.out.println("--------------------------------------------------");
+       System.out.println("");
+       System.out.println("----------------Relatório Umidade-----------------");
        h.MostrarHora();
        for(int i = 0; i< 48; i++){
         System.out.println("[1 de Abril] As ["+h.hora[i]+"H:"+h.minut[i]+
                    "m] A Umidade relativa do ar, era de ["+dado_umid[i]+"%]");
        }
+       System.out.println("------------------------<>------------------------");
           System.out.println("-voltar ao menu pricipal--[1]");
     System.out.println("Desligar Sistema----------[2]");
     Scanner teclado = new Scanner(System.in);

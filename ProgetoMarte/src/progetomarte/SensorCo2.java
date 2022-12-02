@@ -19,13 +19,20 @@ static int dado_co2[]= new int [48];
     }
    public void RealatorioCo2(){
        h.MostrarHora();
-       for(int i = 0; i < 48; i++){
+    System.out.println("-----------------------------------------------------");
+    System.out.println("");
+    System.out.println("----------------Relatório CO2------------------------");
+    
+       for(int i = dado_co2.length -1; i >=0; i--){
            System.out.println("[1 de Abril] As ["+h.hora[i]+"H:"+h.minut[i]+
                    "m] os níveis de co2 eram["+dado_co2[i]+"ppm]");
        }
+       
+    System.out.println("---------------------<>------------------------------");
     System.out.println("-voltar ao menu pricipal--[1]");
     System.out.println("Desligar o Sistema----------[2]");
     Scanner teclado = new Scanner(System.in);
+       System.out.println("");
         int num = teclado.nextInt();
       
       switch(num){
